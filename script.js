@@ -1,10 +1,27 @@
+//param: none
+//return:none
 function main() {
-    let winner = "";
-    let playerTurn = prompt("(r)ock, (p)aper, or (s)cissors");
-    let computer = Math.floor(Math.random()*3);
-    const moves = ["r","p","s"];
-    let computerTurn = moves[computer];
-    if (playerTurn == "r" && computerTurn =="p") winner = "Computer";
-    alert("You picked " + playerTurn + " and computer picked " + computerTurn + " and " + winner + " won");
+    let u = "";
+    let c = "";
+    while (u == c) {
+        u = userTurn();
+        c = cpuTurn();
+        if (u == c) alert("We both chose " + c);
+    }
+    let winner = findWinner(u,c);
+    alert("You chose " + u + " , and I chose " + c + " . " + winner + " won");
 }
-main()
+function userTurn() {
+    let choice = prompt("enter r, p, or s");
+    if (choice != "r" && choice != "p" && choice != "s") {
+        alert("Invalid Input");
+        return userTurn();
+    }
+    return choice;
+}
+function cpuTurn() {
+    let choice = Math.floor(Math.random()*3);
+    let moves = ["r","p","s"];
+    return moves[choice];
+}
+function
