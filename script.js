@@ -1,5 +1,6 @@
 //param: none
 //return:none
+
 function main() {
     let u = "";
     let c = "";
@@ -41,28 +42,16 @@ function cpuTurn() {
 // @param:u,c
 // @return: winner
 function findWinner(u,c) {
-    let combo = u + c;
-    switch (combo) {
-      case "rp":
-        winner = "p"
-        break;
-      case "rs":
-        winner = "c"
-        break;
-      case "rr":
-            winner = "none"
-        break;
-      case "ps":
-        winner = "p"
-        break;
-      case "pr":
-        winner = "c"
-        break;
-      case "pp":
-        winner = "none"
-        break;
-      case ""        
+  let combo = u + c;
+  let match = "";
+  let winner = "";
+  let winArray = [["r","p","I"],["r","s","You"],["s","r","I"],["s","p","You"],["p","s","I"],["p","r","You"]];
+  for (let i =0;i < winArray.length;i++) {
+    match = winArray[i][0]+winArray[i][1];
+    if (match == combo) {
+      winner = winArray[i][2];
+      console.log(winner);
     }
-        alert("You chose " + u + " , and I chose " + c + winner + " won");
-        return winner;
+  }
+  return winner;
 }
