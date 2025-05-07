@@ -50,7 +50,7 @@ function findWinner(u,c) {
     match = winArray[i][0]+winArray[i][1];
     if (match == combo) {
       winner = winArray[i][2];
-      console.log(winner);
+      break;
     }
   }
   return winner;
