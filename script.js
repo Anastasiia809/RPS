@@ -1,7 +1,7 @@
 //param: none
 //return:none
 
-function main() {
+function rpsRound() {
     let u = "";
     let c = "";
     while (u == c) {
