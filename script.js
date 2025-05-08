@@ -1,6 +1,8 @@
+function main() {
+  
+}
 //param: none
 //return:none
-
 function rpsRound() {
     let u = "";
     let c = "";
