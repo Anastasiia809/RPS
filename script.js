@@ -1,5 +1,5 @@
 function main() {
-  
+  let riunds = prompt
 }
 //param: none
 //return:none
