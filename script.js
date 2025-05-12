@@ -1,5 +1,13 @@
 function main() {
-  let u = "";
+   let rounds = prompt("Number of rounds?");
+   if (round == even) alert("must be odd, try again");
+   round = 1;
+
+}
+//param: none
+//return:none
+function rpsRound() {
+    let u = "";
   let c ="";
   while (u == c) {
     u = userTurn();
@@ -9,13 +17,7 @@ function main() {
     }
   }
   winner = findWinner(u,c);
-  alert("You chose " + u + " and I chose "+ c  +  winner  +  "won");       
-}
-//param: none
-//return:none
-function rpsRound() {
-    let rounds = prompt("How many rounds do you want to play?");
-    
+  alert("You chose " + u + " and I chose "+ c  +  winner  +  "won");  
 }
 // userturn
 // user can choose r, p, or s.
