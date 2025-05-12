@@ -2,7 +2,7 @@ function main() {
    let rounds = prompt("Number of rounds?");
    if (round == even) alert("must be odd, try again");
    round = 1;
-
+  
 }
 //param: none
 //return:none
