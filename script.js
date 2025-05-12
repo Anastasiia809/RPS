@@ -1,18 +1,21 @@
 function main() {
-  let riunds = prompt
+  let u = "";
+  let c ="";
+  while (u == c) {
+    u = userTurn();
+    c = cpuTurn();
+    if (u ==c) {
+      alert("We both chose"  + c);
+    }
+  }
+  winner = findWinner(u,c);
+  alert("You chose " + u + " and I chose "+ c  +  winner  +  "won");       
 }
 //param: none
 //return:none
 function rpsRound() {
-    let u = "";
-    let c = "";
-    while (u == c) {
-        u = userTurn();
-        c = cpuTurn();
-        if (u == c) alert("We both chose " + c);
-    }
-    let winner = findWinner(u,c);
-    alert("You chose " + u + " , and I chose " + c + " . " + winner + " won");
+    let rounds = prompt("How many rounds do you want to play?");
+    
 }
 // userturn
 // user can choose r, p, or s.
