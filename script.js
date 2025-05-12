@@ -2,7 +2,7 @@ function main() {
    let rounds = prompt("Number of rounds?");
    if (round == even) alert("must be odd, try again");
    round = 1;
-  
+
 }
 //param: none
 //return:none
@@ -13,11 +13,11 @@ function rpsRound() {
     u = userTurn();
     c = cpuTurn();
     if (u ==c) {
-      alert("We both chose"  + c);
+      alert("We both chose "  + c);
     }
   }
   winner = findWinner(u,c);
-  alert("You chose " + u + " and I chose "+ c  +  winner  +  "won");  
+  alert("You chose " + u + " and I chose "+ c  +  winner  +  " won");  
 }
 // userturn
 // user can choose r, p, or s.
